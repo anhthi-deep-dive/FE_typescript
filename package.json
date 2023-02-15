@@ -1,0 +1,23 @@
+{
+  "name": "typescript-dd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-deep-dive/typescript-dd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tech-deep-dive/typescript-dd/issues"
+  },
+  "homepage": "https://github.com/tech-deep-dive/typescript-dd#readme",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}
