@@ -1,17 +1,8 @@
-type OptionsFlags<Type> = {
-  [Property in keyof Type]: boolean;
-};
-
-type FeatureFlags = {
-  darkMode: () => void;
-  newUserProfile: () => void;
-};
-
-type FeatureOptions = OptionsFlags<FeatureFlags>;
-
-/*
-  type FeatureOptions = {
-    darkMode: boolean;
-    newUserProfile: boolean;
+const someClass = class<Type> {
+  content: Type;
+  constructor(value: Type) {
+    this.content = value;
   }
-*/
+};
+
+const m = new someClass("Hello, world");
