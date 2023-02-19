@@ -1,3 +1,3 @@
 # typescript
 
-https://www.typescriptlang.org/
+https://www.typescriptlang.org/docs/handbook/intro.html
