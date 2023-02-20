@@ -1,8 +1,7 @@
-const someClass = class<Type> {
-  content: Type;
-  constructor(value: Type) {
-    this.content = value;
-  }
-};
+class Animal {
+  x = 0;
+  y = 0;
+}
 
-const m = new someClass("Hello, world");
+type T0 = InstanceType<typeof Animal>;
+// type T0 = C
