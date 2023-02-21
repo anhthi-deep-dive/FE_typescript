@@ -1,7 +1,18 @@
-class Animal {
-  x = 0;
-  y = 0;
-}
+import "reflect-metadata";
+const requiredMetadataKey = Symbol("required");
 
-type T0 = InstanceType<typeof Animal>;
-// type T0 = C
+function required(
+  target: Object,
+  propertyKey: string | symbol,
+  parameterIndex: number
+) {
+  let existingRequiredParameters: number[] =
+    Reflect.getOwnMetadata(requiredMetadataKey, target, propertyKey) || [];
+  existingRequiredParameters.push(parameterIndex);
+  Reflect.defineMetadata(
+    requiredMetadataKey,
+    existingRequiredParameters,
+    target,
+    propertyKey
+  );
+}
